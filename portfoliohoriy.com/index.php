@@ -94,7 +94,7 @@
             <p class="works-name"><br class="sp-only">more info →</p>
           </a>
           <a class="works-item" href="ai/">
-            <div class="works-img"><img src="/img/ai.jpg" alt="" /></div>
+            <div class="works-img"><img src="/img/ai-02.png" alt="" /></div>
             <p class="works-name"><br class="sp-only">more info →</p>
           </a>
           <a class="works-item" href="movie/">

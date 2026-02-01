@@ -152,9 +152,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-.mv {
-  height: 66vh;
-}
+  .mv {
+    height: 66vh;
+  }
 }
 
 .mv-container {
@@ -183,8 +183,8 @@ img {
   line-height: 2;
 }
 
-.mv-text .top_mv{
-font-weight: 600;
+.mv-text .top_mv {
+  font-weight: 600;
 }
 
 /*--------------------------------
@@ -223,7 +223,7 @@ font-weight: 600;
 
 .works-item:hover {
   /*  opacity: .9; */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(30 161 182 / 29%);
 
 }
 

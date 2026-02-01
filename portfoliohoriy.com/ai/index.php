@@ -27,14 +27,67 @@
     <?php include '../common/header.php'; ?>
     <main class="content">
       <div class="underlaye_mv">
-        <p class="mv-title">Generative AI</p>
-        <p class="mv-subtitle">AIで生成した作品の一部を紹介します</p>
+        <p class="mv-title">AI</p>
+        <!-- <p class="mv-subtitle">AIで生成した作品の一部を紹介します</p> -->
       </div>
-      <div class="banner_bg">
+
+      <section class="works section" id="works">
+      <!-- <h2 class="title">Youtube</h2> -->
+      <div class="youtube-pic">
+        <div class="pic-left">
+          <div class="youtube-item">
+            <div class="works-img">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cPgHBf8pFhE?si=aYwkgI66tG8CNZZ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="pic-right">
+          <div class="">
+            <div class="profile-body">
+              <h2>Stable DiffusionをMacOSに実装</h2>
+              <div class="about_txt">
+                <p>
+                  基本的にWindows環境に実装することが前提のStable Diffusion。<br>
+                  そんな中、MacOSに実装する方法をYouTubeで紹介しました。<br>
+                  2023年の動画公開当時、日本語のドキュメントが全くといっていいほど出回っていない中、いち早く情報をキャッチアップし実装。<br>
+                  ノウハウを公開しました。
+                </p>
+              </div>
+              <a href="/reaction.pdf" target="_blank">
+                <button id="modalOpen" class="link_btn_tube">反響を見る　→</button></a>
+              <div id="easyModal" class="modal">
+                <div class="modal-content">
+                  <!--<div class="modal-header">
+                      <img src="/img/netwog" alt="AWS">
+                      <span class="modalClose">×</span>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube">
+        <div class="youtube-item">
+          <div class="works-img">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-lm6UCbUMEo?si=lxQDT2RQegPWMCln" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="youtube-item">
+          <div class="works-img">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BZgbuo_0ItM?si=8RI65lRQsrYVvV48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- <div class="banner_bg">
         <img src="/img/ai/ai_pc.jpg" alt="" class="pc">
         <img src="/img/ai/ai_sp.jpg" alt="" class="sp">
         </article>
-      </div>
+      </div> -->
       <!--  <div class="page-top" id="js-page-top">
         <span class="material-icons-outlined">expand_less</span>
       </div>-->
