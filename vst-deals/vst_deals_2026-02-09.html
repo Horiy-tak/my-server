@@ -1,0 +1,4924 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VST Plugin Sale Info - 2026-02-09 14:44</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a2e;
+            --surface2: #16213e;
+            --accent: #e94560;
+            --accent2: #0f3460;
+            --text: #eee;
+            --text-muted: #999;
+            --green: #00c853;
+            --yellow: #ffd600;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--surface), var(--surface2));
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, var(--accent), var(--yellow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header .meta { color: var(--text-muted); font-size: 0.9em; }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        .summary-card {
+            background: var(--surface);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .summary-card .count {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .summary-card .label { color: var(--text-muted); font-size: 0.85em; }
+        .site-section {
+            margin-bottom: 40px;
+        }
+        .site-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent2);
+        }
+        .site-header h2 { font-size: 1.4em; }
+        .site-header .badge {
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.75em;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        .deal-card {
+            background: var(--surface);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .deal-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.15);
+        }
+        .deal-card .discount-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.8em;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+        .deal-card .product-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-right: 70px;
+        }
+        .deal-card .product-name a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        .deal-card .product-name a:hover {
+            color: var(--accent);
+        }
+        .deal-card .prices {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .deal-card .sale-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--green);
+        }
+        .deal-card .original-price {
+            font-size: 0.9em;
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+        .deal-card .end-date {
+            font-size: 0.8em;
+            color: var(--yellow);
+            margin-top: auto;
+            padding-top: 8px;
+        }
+        .no-deals {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            background: var(--surface);
+            border-radius: 10px;
+        }
+        .error-section {
+            background: #2a1a1a;
+            border-left: 4px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+        .error-section h3 { color: var(--accent); margin-bottom: 4px; }
+        .error-section p { color: var(--text-muted); font-size: 0.9em; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.8em;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 10px; }
+            header { padding: 24px 16px; }
+            header h1 { font-size: 1.4em; }
+            .deals-grid { grid-template-columns: 1fr; }
+            .summary { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VST Plugin Sale Info</h1>
+            <p class="meta">Generated: 2026-02-09 14:44</p>
+        </header>
+
+        <div class="summary">
+            <div class="summary-card">
+                <div class="count">226</div>
+                <div class="label">Total Deals</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="count">28</div>
+                <div class="label">Plugin Boutique</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="count">150</div>
+                <div class="label">JRR Shop</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="count">15</div>
+                <div class="label">Audio Plugin Deals</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="count">33</div>
+                <div class="label">ADSR Sounds</div>
+            </div>
+            
+        </div>
+
+        
+
+        
+        <div class="site-section">
+            <div class="site-header">
+                <h2>Plugin Boutique</h2>
+                <span class="badge">28 deals</span>
+            </div>
+
+            
+            <div class="deals-grid">
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">83% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/44-Saturation/8667-SSL-Native-X-Saturator" target="_blank" rel="noopener">SSL Native X-Saturator</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$7.99</span>
+                        
+                        
+                        <span class="original-price">$49.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 15 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">74% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/18-Amp-Simulator/12669-AmpliTube-5" target="_blank" rel="noopener">AmpliTube 5</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.99</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 02 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/4-Synth/15308-ZENOLOGY-PRO" target="_blank" rel="noopener">ZENOLOGY PRO</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$114.00</span>
+                        
+                        
+                        <span class="original-price">$229.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 15 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">70% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/31-Synth-Presets/9747-Plugin-Boutique-Serum-Presets-Bundle" target="_blank" rel="noopener">Plugin Boutique Serum Presets Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 02 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">20% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/3-Studio-Tools/93-Music-Theory-Tools/14563-Scaler-3" target="_blank" rel="noopener">Scaler 3</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/3-Studio-Tools/93-Music-Theory-Tools/14479-Scaler-3-Upgrade" target="_blank" rel="noopener">Scaler 3 Upgrade</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/141-Free-Bundles/16093-Best-of-Free-VST-Plugins-Bundle" target="_blank" rel="noopener">Best of Free VST Plugins Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">95% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/84-Mix-Master/12542-Platinum-Bundle" target="_blank" rel="noopener">Platinum Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$1,999.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 12 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">70% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/1560-Xpand-2" target="_blank" rel="noopener">Xpand!2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 14 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">91% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/6618-DANDY" target="_blank" rel="noopener">DANDY</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$10.00</span>
+                        
+                        
+                        <span class="original-price">$119.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 15 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">90% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/84-Mix-Master/14593-UAD-Studio-Classics-Bundle" target="_blank" rel="noopener">UAD Studio Classics Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$599.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">40% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/13-Drum-FX/13655-Snapback" target="_blank" rel="noopener">Snapback</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$49.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 18 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/58-Instrument-Bundles/13347-Soundbox-Instruments-Bundle" target="_blank" rel="noopener">Soundbox Instruments Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$76.30</span>
+                        
+                        
+                        <span class="original-price">$109.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">59% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/4-Synth/3187-Spire" target="_blank" rel="noopener">Spire</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$76.00</span>
+                        
+                        
+                        <span class="original-price">$189.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 13 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">66% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/39-Effects-Bundles/16130-UAD-Build-Your-Own-Bundle-Winter-Mix-Tape" target="_blank" rel="noopener">UAD &#39;Build Your Own Bundle&#39; Winter Mix Tape</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 26 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">33% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/13548-Bloom-Drum-Machine" target="_blank" rel="noopener">Bloom Drum Machine</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                        <span class="original-price">$59.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">92% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/9807-SPARKLE-2" target="_blank" rel="noopener">SPARKLE 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$10.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 12 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">80% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/848-BFD-3-5" target="_blank" rel="noopener">BFD 3.5</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 14 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">84% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/21-Channel-Strip/11503-UAD-Sound-City-Studios-Plugin" target="_blank" rel="noopener">UAD Sound City Studios Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 16 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">75% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/12454-MODO-BASS-2" target="_blank" rel="noopener">MODO BASS 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.99</span>
+                        
+                        
+                        <span class="original-price">$199.99</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 02 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/8-Compressor/11535-Tube-Tech-CL-1B-Mk-II" target="_blank" rel="noopener">Tube-Tech CL 1B Mk II</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 15 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">65% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/89-Complete-Collection/14789-Excite-Audio-Bundle-Crossgrade-From-Any-Excite-Audio-Product" target="_blank" rel="noopener">Excite Audio Bundle Crossgrade From Any Excite Audio Product</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$219.00</span>
+                        
+                        
+                        <span class="original-price">$639.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">72% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/53-Multi-Effect-/5900-Super-VHS" target="_blank" rel="noopener">Super VHS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$19.00</span>
+                        
+                        
+                        <span class="original-price">$69.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 15 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">75% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/8-Compressor/11502-Empirical-Labs-EL8-Distressor-Compressor" target="_blank" rel="noopener">Empirical Labs EL8 Distressor Compressor</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 16 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">44% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/25-Spectral-Analysis/9301-VISION-4X" target="_blank" rel="noopener">VISION 4X</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$89.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">57% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/3-Studio-Tools/93-Music-Theory-Tools/8877-Melody-Sauce-2" target="_blank" rel="noopener">Melody Sauce 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$25.00</span>
+                        
+                        
+                        <span class="original-price">$59.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 23 Feb
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">51% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/81-Bundles/89-Complete-Collection/9866-Excite-Audio-Bundle" target="_blank" rel="noopener">Excite Audio Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$309.00</span>
+                        
+                        
+                        <span class="original-price">$639.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 01 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">84% off</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.pluginboutique.com/product/2-Effects/53-Multi-Effect-/14942-Unfiltered-Audio-BYOME" target="_blank" rel="noopener">Unfiltered Audio BYOME</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$20.00</span>
+                        
+                        
+                        <span class="original-price">$128.00</span>
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: Ends 31 Mar
+    
+  
+
+            
+    
+      Hot!</div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="site-section">
+            <div class="site-header">
+                <h2>JRR Shop</h2>
+                <span class="badge">150 deals</span>
+            </div>
+
+            
+            <div class="deals-grid">
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">100% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/cherry-audio-voltage-modular-nucleus.html" target="_blank" rel="noopener">Cherry Audio Voltage Modular Nucleus</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$0.00</span>
+                        
+                        
+                        <span class="original-price">$29.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">100% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/cherry-audio-surrealistic-mg-1-plus.html" target="_blank" rel="noopener">Cherry Audio Surrealistic MG-1 Plus Moog Synthesizer Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$0.00</span>
+                        
+                        
+                        <span class="original-price">$29.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">100% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/izotope-vinyl.html" target="_blank" rel="noopener">iZotope Vinyl</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$0.00</span>
+                        
+                        
+                        <span class="original-price">$29.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">92% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-sparkle-plugin.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist SPARKLE 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$10.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">90% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ik-multimedia-syntronik-oxa.html" target="_blank" rel="noopener">IK Multimedia Syntronik OXa Synth Instrument</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$4.99</span>
+                        
+                        
+                        <span class="original-price">$49.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">87% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/antelope-audio-the-judge.html" target="_blank" rel="noopener">Antelope Audio The Judge</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$19.99</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">87% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/antelope-audio-intune-harmony.html" target="_blank" rel="noopener">Antelope Audio InTune Harmony</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$19.99</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">87% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/meldaproduction-dreammachines.html" target="_blank" rel="noopener">MeldaProduction DreamMachines Drum Machine Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$10.00</span>
+                        
+                        
+                        <span class="original-price">$75.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">85% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/antelope-audio-stages.html" target="_blank" rel="noopener">Antelope Audio Stages</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$19.99</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">83% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/antelope-audio-halo-delay.html" target="_blank" rel="noopener">Antelope Audio Halo Delay</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$19.99</span>
+                        
+                        
+                        <span class="original-price">$119.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">83% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/uvi-digital-synsations.html" target="_blank" rel="noopener">UVI Digital Synsations 1</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$26.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">80% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ik-multimedia-t-racks-sunset-sound-studio-reverb-plugin.html" target="_blank" rel="noopener">IK Multimedia T-RackS Sunset Sound Studio Reverb</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$30.00</span>
+                        
+                        
+                        <span class="original-price">$149.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">80% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/gobbler-75gb-unlimited-annual-plan.html" target="_blank" rel="noopener">Gobbler 75GB Unlimited Annual Plan</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$20.00</span>
+                        
+                        
+                        <span class="original-price">$100.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">79% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/audio-modeling-swam-variflute.html" target="_blank" rel="noopener">Audio Modeling SWAM VariFlute</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                        <span class="original-price">$189.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">78% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-cinedream.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist CINEDREAM</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">78% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-silk-plugin.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist SILK 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">78% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-iron-plugin.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist IRON 2 Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">78% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-carbon-plugin.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist CARBON Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">78% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-amber-plugin.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist AMBER 2 Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">75% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/duy-time-travel.html" target="_blank" rel="noopener">DUY Time Travel</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.99</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">75% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/roland-cr-78-lifetime-key.html" target="_blank" rel="noopener">Roland CR-78 Lifetime Key</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">74% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/native-instruments-super-8.html" target="_blank" rel="noopener">Native Instruments Super 8</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$26.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">73% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/type-writer-audio-x-dynamic-imager.html" target="_blank" rel="noopener">Type Writer Audio X Dynamic Imager</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$35.00</span>
+                        
+                        
+                        <span class="original-price">$129.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">71% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/baby-audio-crystalline.html" target="_blank" rel="noopener">Baby Audio Crystalline Reverb Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">71% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/mia-laboratories-kick-101.html" target="_blank" rel="noopener">MIA Laboratories Kick 101</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">71% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/uvi-world-traditions.html" target="_blank" rel="noopener">UVI World Traditions</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">71% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/uvi-retro-organs.html" target="_blank" rel="noopener">UVI Retro Organs</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">67% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-mix-tape-pro.html" target="_blank" rel="noopener">Universal Audio UAD Winter Mix Tape Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">67% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-essentials-edition.html" target="_blank" rel="noopener">Universal Audio UAD Essentials Edition</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">63% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-latin-groove-v1-raw.html" target="_blank" rel="noopener">Q Up Arts Latin Groove Factory V1 RAW</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">63% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-kodish-drum-n-bass-raw.html" target="_blank" rel="noopener">Q Up Arts Kodish Drum n Bass RAW</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">63% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-kodish-drum-n-bass-raw.html" target="_blank" rel="noopener">Q Up Arts Kodish Drum n Bass RAW</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">63% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-latin-groove-v1-raw.html" target="_blank" rel="noopener">Q Up Arts Latin Groove Factory V1 RAW</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-ancient-kingdom.html" target="_blank" rel="noopener">EastWest Ancient Kingdom</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-lo-fi.html" target="_blank" rel="noopener">EastWest Lo-Fi</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-iconic.html" target="_blank" rel="noopener">EastWest Iconic</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-strings-2.html" target="_blank" rel="noopener">EastWest Hollywood Strings 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$499.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-orchestrator.html" target="_blank" rel="noopener">EastWest Hollywood Fantasy Orchestrator</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-orchestra-bundle.html" target="_blank" rel="noopener">EastWest Fantasy Orchestra</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$239.00</span>
+                        
+                        
+                        <span class="original-price">$599.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-voices.html" target="_blank" rel="noopener">EastWest Hollywood Fantasy Voices</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-percussion.html" target="_blank" rel="noopener">EastWest Hollywood Fantasy Percussion</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-winds.html" target="_blank" rel="noopener">EastWest Hollywood Fantasy Winds</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-brass.html" target="_blank" rel="noopener">EastWest Hollywood Fantasy Brass</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-fantasy-strings.html" target="_blank" rel="noopener">EastWest Hollywood Fantasy Strings</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-string-machine.html" target="_blank" rel="noopener">EastWest String Machine</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-forbidden-planet.html" target="_blank" rel="noopener">EastWest Forbidden Planet</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-pop-brass.html" target="_blank" rel="noopener">EastWest Hollywood Pop Brass</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-orchestra-opus-edition-diamond.html" target="_blank" rel="noopener">EastWest Hollywood Orchestra Opus Edition</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$239.00</span>
+                        
+                        
+                        <span class="original-price">$599.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-pianos-yamaha-c7-platinum.html" target="_blank" rel="noopener">EastWest Pianos Yamaha C7 Platinum</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-voices-of-opera.html" target="_blank" rel="noopener">EastWest Voices of Opera</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-pianos-steinway-d-platinum.html" target="_blank" rel="noopener">EastWest Pianos Steinway D Platinum</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-backup-singers.html" target="_blank" rel="noopener">EastWest Hollywood Backup Singers</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-pianos-bosendorfer-290-platinum.html" target="_blank" rel="noopener">EastWest Pianos Bosendorfer 290 Platinum</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-pianos-bechstein-d-280-platinum.html" target="_blank" rel="noopener">EastWest Pianos Bechstein D-280 Platinum</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-voices-of-soul.html" target="_blank" rel="noopener">EastWest Voices of Soul</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/musical-sampling-trailer-brass.html" target="_blank" rel="noopener">Musical Sampling Trailer Brass</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/musical-sampling-adventure-brass.html" target="_blank" rel="noopener">Musical Sampling Adventure Brass</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-voices-of-the-empire.html" target="_blank" rel="noopener">EastWest Voices Of The Empire</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-hollywood-choirs-diamond.html" target="_blank" rel="noopener">EastWest Hollywood Choirs Diamond</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-sd3-stormdrum-3-20860.html" target="_blank" rel="noopener">EastWest Stormdrum 3</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-prodrummer-volume-2-joe-chiccarelli.html" target="_blank" rel="noopener">EastWest ProDrummer Volume 2 Joe Chiccarelli</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-quantum-leap-pianos-platinum-license.html" target="_blank" rel="noopener">EastWest Pianos Platinum</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-quantum-leap-symphonic-choirs-platinum-plus-dynamics-vibrato-levels-from-vota.html" target="_blank" rel="noopener">EastWest Symphonic Choirs Platinum Plus Bundle with VOTA</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-prodrummer-volume-1-2-mark-spike-stent-joe-chicarelli.html" target="_blank" rel="noopener">EastWest ProDrummer Volume 1 &amp; 2 Mark Spike Stent Joe Chicarelli</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-prodrummer-volume-1-mark-spike-stent.html" target="_blank" rel="noopener">EastWest ProDrummer Volume 1 Mark &#34;Spike&#34; Stent</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-sd2-stormdrum-2-pro-bundle.html" target="_blank" rel="noopener">EastWest Stormdrum 2 Pro Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-spaces-license.html" target="_blank" rel="noopener">EastWest Spaces II</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-ministry-of-rock-1-license.html" target="_blank" rel="noopener">EastWest Ministry of Rock</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-quantum-leap-ra-license.html" target="_blank" rel="noopener">EastWest RA</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-fab-four-license.html" target="_blank" rel="noopener">EastWest Fab Four</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-goliath-license.html" target="_blank" rel="noopener">EastWest Goliath</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-ql-symphonic-orchestra-platinum-license.html" target="_blank" rel="noopener">EastWest Symphonic Orchestra Platinum</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$119.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-gypsy-license.html" target="_blank" rel="noopener">EastWest Gypsy</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-ql-silk-license.html" target="_blank" rel="noopener">EastWest Silk</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-voices-of-passion.html" target="_blank" rel="noopener">EastWest Voices of Passion</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-ghostwriter.html" target="_blank" rel="noopener">EastWest Ghostwriter</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-ministry-of-rock-2.html" target="_blank" rel="noopener">EastWest Ministry of Rock 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/eastwest-the-dark-side.html" target="_blank" rel="noopener">EastWest The Dark Side</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ujam-instruments-virtual-guitarist-bundle-plugin.html" target="_blank" rel="noopener">UJAM Instruments Virtual Guitarist Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/sennheiser-mke-400.html" target="_blank" rel="noopener">Sennheiser MKE 400 Shot Gun Mic for Cameras</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.99</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/uvi-drum-designer.html" target="_blank" rel="noopener">UVI Drum Designer</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$59.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">58% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/pitch-innovations-street-of-south-india-bundle.html" target="_blank" rel="noopener">Pitch Innovations Streets of South India Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$237.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">51% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/pitch-innovations-thavil-kit.html" target="_blank" rel="noopener">Pitch Innovations Thavil Kit</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">51% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/pitch-innovations-thambolam-kit.html" target="_blank" rel="noopener">Pitch Innovations Thambolam Kit</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">51% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-streetbeats-exs.html" target="_blank" rel="noopener">Q Up Arts Streetbeats EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">51% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-streetbeats-exs.html" target="_blank" rel="noopener">Q Up Arts Streetbeats EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/antares-metamorph.html" target="_blank" rel="noopener">Antares Metamorph</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$100.00</span>
+                        
+                        
+                        <span class="original-price">$200.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-synth-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Synth Collection</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$149.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-1176-classic-limiter-collection.html" target="_blank" rel="noopener">Universal Audio 1176 Classic Limiter Collection</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/slate-digital-verbsuite-classics.html" target="_blank" rel="noopener">Slate Digital VerbSuite Classics</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$74.50</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/best-service-strings-of-winter.html" target="_blank" rel="noopener">Sonuscore TO - Strings Of Winter</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$74.50</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/faw-circle.html" target="_blank" rel="noopener">Future Audio Workshop Circle 2 Synthesizer Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$64.99</span>
+                        
+                        
+                        <span class="original-price">$129.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">45% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/trainyourears-eq-edition.html" target="_blank" rel="noopener">TrainYourEars EQ Edition 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$89.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">42% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-signature-edition.html" target="_blank" rel="noopener">Universal Audio UAD Signature Edition V3</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$349.00</span>
+                        
+                        
+                        <span class="original-price">$599.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">42% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/avid-pro-tools-ultimate.html" target="_blank" rel="noopener">Avid Pro Tools Ultimate Perpetual with 1 Year Updates and Support 9938-30007-00</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$1,499.00</span>
+                        
+                        
+                        <span class="original-price">$2,599.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">41% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/boz-digital-labs-little-foot.html" target="_blank" rel="noopener">Boz Digital Labs Little Foot 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$49.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">41% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/virharmonic-czech-boys-choir.html" target="_blank" rel="noopener">Virharmonic Czech Boys Choir</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$339.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">40% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-analog-tape-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Analog Tape Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$149.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">40% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/nos-audio-panther-pair.html" target="_blank" rel="noopener">NOS Audio Panther Linear Edition Active Ribbon Microphone - Pair</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$299.00</span>
+                        
+                        
+                        <span class="original-price">$499.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">39% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/baby-audio-tekno.html" target="_blank" rel="noopener">Baby Audio Tekno</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">39% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/baby-audio-smooth-operator-pro.html" target="_blank" rel="noopener">Baby Audio Smooth Operator Pro</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">39% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/baby-audio-humanoid.html" target="_blank" rel="noopener">Baby Audio Humanoid</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/pitch-innovations-chenda-melam-kit.html" target="_blank" rel="noopener">Pitch Innovations Chenda Melam Kit</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-select-10-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Select 10 Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$249.00</span>
+                        
+                        
+                        <span class="original-price">$399.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/auburn-sounds-lens.html" target="_blank" rel="noopener">Auburn Sounds Lens Multiband Compander Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-the-holy-grail-piano-kontakt.html" target="_blank" rel="noopener">Q Up Arts The Holy Grail Piano Kontakt</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-the-holy-grail-piano-exs.html" target="_blank" rel="noopener">Q Up Arts The Holy Grail Piano EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-symphonic-fields-forever.html" target="_blank" rel="noopener">Q Up Arts Symphonic Fields Forever EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-steve-gadd-drumscores.html" target="_blank" rel="noopener">Q Up Arts Steve Gadd Drumscores Complete EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-steve-gadd-drumscores.html" target="_blank" rel="noopener">Q Up Arts Steve Gadd Drumscores Complete EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-symphonic-fields-forever.html" target="_blank" rel="noopener">Q Up Arts Symphonic Fields Forever EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">38% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/q-up-arts-the-holy-grail-piano-exs.html" target="_blank" rel="noopener">Q Up Arts The Holy Grail Piano EXS</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$79.20</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">35% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/audiothing-outer-space.html" target="_blank" rel="noopener">AudioThing Outer Space</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$44.85</span>
+                        
+                        
+                        <span class="original-price">$69.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">34% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ssl-autoseries-bundle.html" target="_blank" rel="noopener">SSL autoSeries Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">34% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-select-2-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Select 2 Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">33% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-musicians-collection.html" target="_blank" rel="noopener">Universal Audio UAD Musicians Collection</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">33% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-guitar-amp-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Guitar Amp Bundle Mk2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">33% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-select-6-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Select 6 Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$299.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">33% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/nos-audio-panther-mk-2.html" target="_blank" rel="noopener">NOS Audio Panther MK2 Active Ribbon Microphone - Open Box</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$150.00</span>
+                        
+                        
+                        <span class="original-price">$224.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-uad-select-3-bundle.html" target="_blank" rel="noopener">Universal Audio UAD Select 3 Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$139.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/ik-multimedia-tonex-one.html" target="_blank" rel="noopener">IK Multimedia TONEX One</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$139.99</span>
+                        
+                        
+                        <span class="original-price">$199.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/touch-loops-lofi-house-chords.html" target="_blank" rel="noopener">Touch Loops Lo-Fi House Chords</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$6.99</span>
+                        
+                        
+                        <span class="original-price">$9.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/virharmonic-choral-bundle.html" target="_blank" rel="noopener">Virharmonic Choral Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$475.00</span>
+                        
+                        
+                        <span class="original-price">$679.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">29% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/psp-tilt-q.html" target="_blank" rel="noopener">PSP Tilt-Q</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                        <span class="original-price">$69.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">26% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/uvi-plurality-expansion-for-falcon.html" target="_blank" rel="noopener">UVI Plurality Expansion for Falcon</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                        <span class="original-price">$39.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">25% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/universal-audio-luna-pro-bundle.html" target="_blank" rel="noopener">Universal Audio LUNA Pro 2.0 Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$149.00</span>
+                        
+                        
+                        <span class="original-price">$199.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">25% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/imaginando-frms.html" target="_blank" rel="noopener">Imaginando FRMS Granular Synthesizer Plugin</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$89.00</span>
+                        
+                        
+                        <span class="original-price">$119.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">23% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/antelope-audio-v-amp.html" target="_blank" rel="noopener">Antelope Audio V-AMP</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$99.00</span>
+                        
+                        
+                        <span class="original-price">$129.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">21% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/akai-mpc-key-61.html" target="_blank" rel="noopener">Akai MPC Key 61</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$1,499.00</span>
+                        
+                        
+                        <span class="original-price">$1,899.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">20% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/soundiron-voice-of-the-sun-sunrise.html" target="_blank" rel="noopener">Soundiron Voice Of The Sun - Sunrise</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$79.00</span>
+                        
+                        
+                        <span class="original-price">$99.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">20% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/forever-89-visco.html" target="_blank" rel="noopener">Forever 89 Visco 2.0</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$111.20</span>
+                        
+                        
+                        <span class="original-price">$139.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">20% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/serato-studio.html" target="_blank" rel="noopener">Serato Studio</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">20% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/nos-audio-panther.html" target="_blank" rel="noopener">NOS Audio Panther Linear Edition Active Ribbon Microphone</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.00</span>
+                        
+                        
+                        <span class="original-price">$249.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">17% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/korg-ka350-ac-adapter-for-volca-series.html" target="_blank" rel="noopener">Korg KA350 AC Adapter for Volca Series</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$24.99</span>
+                        
+                        
+                        <span class="original-price">$29.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">17% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/friedman-amplification-fuzz-fiend-12ax7-pedal.html" target="_blank" rel="noopener">Friedman Amplification Fuzz Fiend 12AX7 Tube Powered Fuzz Pedal</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$249.99</span>
+                        
+                        
+                        <span class="original-price">$299.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">17% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/friedman-amplication-motor-city-drive-12ax7.html" target="_blank" rel="noopener">Friedman Amplication Motor City Drive Pedal</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$249.99</span>
+                        
+                        
+                        <span class="original-price">$299.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">13% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/volca-case.html" target="_blank" rel="noopener">Korg Volca Case</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$34.99</span>
+                        
+                        
+                        <span class="original-price">$39.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">13% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/pigtronix-philosopher-s-rock.html" target="_blank" rel="noopener">Pigtronix Philosopher&#39;s Rock</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$129.00</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">13% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-guthrie-trapp-overdrive.html" target="_blank" rel="noopener">Rockett Pedals Guthrie Trapp Overdrive</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$199.99</span>
+                        
+                        
+                        <span class="original-price">$229.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">13% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-led-boots-overdrive-boost.html" target="_blank" rel="noopener">Rockett Pedals Led Boots Overdrive Boost</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$169.99</span>
+                        
+                        
+                        <span class="original-price">$195.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">7% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-hightop.html" target="_blank" rel="noopener">Rockett Pedals Hightop</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$249.99</span>
+                        
+                        
+                        <span class="original-price">$269.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">6% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-alien-echo-delay-pedal.html" target="_blank" rel="noopener">Rockett Pedals Alien Echo Delay</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$139.99</span>
+                        
+                        
+                        <span class="original-price">$149.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">3% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-allan-holdsworth-signature-overdrive-pedal.html" target="_blank" rel="noopener">Rockett Pedals Allan Holdsworth Overdrive</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$249.99</span>
+                        
+                        
+                        <span class="original-price">$259.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/auburn-sounds-panagement.html" target="_blank" rel="noopener">Auburn Sounds Panagement Binaural Reverb and Spatializer</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/suhr-reactive-load.html" target="_blank" rel="noopener">Suhr Reactive Load</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$349.00</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/korg-volca-fm-synthesizer.html" target="_blank" rel="noopener">Korg Volca FM Synthesizer</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$149.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-animal-od.html" target="_blank" rel="noopener">Rockett Pedals Animal Overdrive</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-archer.html" target="_blank" rel="noopener">Rockett Pedals Archer</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-archer-ikon.html" target="_blank" rel="noopener">Rockett Pedals Archer Ikon</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.jrrshop.com/rockett-pedals-tim-pierce-overdrive-poweramp.html" target="_blank" rel="noopener">Rockett Pedals Tim Pierce Overdrive</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$249.00</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="site-section">
+            <div class="site-header">
+                <h2>Audio Plugin Deals</h2>
+                <span class="badge">15 deals</span>
+            </div>
+
+            
+            <div class="deals-grid">
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">98% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/february-mega-bundle/" target="_blank" rel="noopener">February Mega Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$9.99</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 19 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">97% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/ultimate-drum-hits-bundle-by-undrgrnd-sounds/" target="_blank" rel="noopener">Ultimate Drum-Hits Bundle by Undrgrnd Sounds</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$35.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 9 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">89% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/absynth-ocean-collective-by-ocean-swift-synthesis/" target="_blank" rel="noopener">Absynth Ocean Collective by Ocean Swift Synthesis</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$12.99</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 3 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">83% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/ultimate-sound-design-bundle-by-haromonox-audio/" target="_blank" rel="noopener">Ultimate Sound Design Bundle by Haromonox Audio</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">82% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/german-harpsichord-1738-by-realsamples/" target="_blank" rel="noopener">German Harpsichord 1738 by Realsamples</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$19.95</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 1 day</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">76% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/morphestra-ultra-by-sample-logic/" target="_blank" rel="noopener">Morphestra ULTRA by Sample Logic</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$89.99</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 10 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">75% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/silk-by-eastwest/" target="_blank" rel="noopener">Silk by EastWest</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 5 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">75% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/sirens-horns-by-sampletraxx/" target="_blank" rel="noopener">Sirens &amp; Horns by Sampletraxx</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 10 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">74% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/synth-icons-bundle-by-reverb-machine/" target="_blank" rel="noopener">Synth Icons Bundle by Reverb Machine</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$39.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 2 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">70% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/amateur-orchestra-by-ink-audio/" target="_blank" rel="noopener">Amateur Orchestra by Ink Audio</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$29.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">70% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/strata-by-crickets-audio/" target="_blank" rel="noopener">Strata by Crickets Audio</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$22.50</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 7 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">65% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/alegre-by-wellencraft/" target="_blank" rel="noopener">Alegre by Wellencraft</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$28.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 13 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">62% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/revelation-fusion-harp-by-sound-yeti/" target="_blank" rel="noopener">Revelation Fusion Harp by Sound Yeti</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$49.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 2 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/impromptu-bundle-by-zero-g/" target="_blank" rel="noopener">Impromptu Bundle by Zero-G</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$44.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 3 days</div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">60% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://audioplugin.deals/product/ethereal-vocal-collection-by-bela-d-media/" target="_blank" rel="noopener">Ethereal Vocal Collection by Bela D Media</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$84.00</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="end-date">Ends: 8 days</div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="site-section">
+            <div class="site-header">
+                <h2>ADSR Sounds</h2>
+                <span class="badge">33 deals</span>
+            </div>
+
+            
+            <div class="deals-grid">
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">90% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/d-fused-sounds-sold-outpresets-bundle-2024/" target="_blank" rel="noopener">Sold Out:Presets Bundle 2024</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 40.78</span>
+                        
+                        
+                        <span class="original-price">$ 407.80</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">58% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/brandon-chapa-a-little-bit-of-everything-samples/" target="_blank" rel="noopener">A Little Bit Of Everything (Multi Kit)</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 24.99</span>
+                        
+                        
+                        <span class="original-price">$ 59.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">51% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/d-fused-sounds-80s-nostalgia-for-serum-2-presets/" target="_blank" rel="noopener">80&#39;s Nostalgia for Serum 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 9.70</span>
+                        
+                        
+                        <span class="original-price">$ 19.80</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/studio-trap-sounds-future-bandz-samples/" target="_blank" rel="noopener">Future Bandz</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 7.48</span>
+                        
+                        
+                        <span class="original-price">$ 14.95</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/audio-juice-phantom-love-hip-hop-kits/" target="_blank" rel="noopener">Phantom Love (Melody Toolkit)</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 24.99</span>
+                        
+                        
+                        <span class="original-price">$ 49.95</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/d-fused-sounds-technocracy-samples-loops/" target="_blank" rel="noopener">Technocracy</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 8.70</span>
+                        
+                        
+                        <span class="original-price">$ 17.40</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">50% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/studiotrapsounds-chromatic-drum-kit-samples-loops/" target="_blank" rel="noopener">Chromatic - Drum Kit</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 9.98</span>
+                        
+                        
+                        <span class="original-price">$ 19.95</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">47% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/brandon-chapa-broken-mirrors-samples-loops/" target="_blank" rel="noopener">Broken Mirrors</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 15.99</span>
+                        
+                        
+                        <span class="original-price">$ 29.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">41% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/catch-the-rhythm-producers-bundle-deal-vol-2-samples-loops/" target="_blank" rel="noopener">Producer&#39;s Bundle Deal Vol. 2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 29.00</span>
+                        
+                        
+                        <span class="original-price">$ 49.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">41% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/catch-the-rhythm-producers-bundle-deal-vol-1-samples-loops/" target="_blank" rel="noopener">Producer&#39;s Bundle Deal Vol. 1</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 29.00</span>
+                        
+                        
+                        <span class="original-price">$ 49.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">41% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/wav-samples/surrender-to-303/" target="_blank" rel="noopener">Surrender to 303</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 23.03</span>
+                        
+                        
+                        <span class="original-price">$ 39.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">40% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/lostbeat-audio-jazz-chords-3-piano-rhodes-samples-loops/" target="_blank" rel="noopener">Jazz chords 3 - Piano/Rhodes sample pack</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 12.00</span>
+                        
+                        
+                        <span class="original-price">$ 20.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">40% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/lostbeat-audio-shinobue-japanese-flute-pack-1-samples-loops/" target="_blank" rel="noopener">Shinobue Japanese Flute Pack 1</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 18.00</span>
+                        
+                        
+                        <span class="original-price">$ 30.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">33% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/brandon-chapa-synth-city-serum-bank/" target="_blank" rel="noopener">Synth City (Serum Bank)</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 19.99</span>
+                        
+                        
+                        <span class="original-price">$ 29.99</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/onlygroove-tech-house-edition-by-yvvan-back/" target="_blank" rel="noopener">#Onlygroove Tech House Edition by Yvvan Back</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 13.86</span>
+                        
+                        
+                        <span class="original-price">$ 19.80</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/afro-house-essentials-vol-3/" target="_blank" rel="noopener">Afro House Essentials Vol.3</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 13.30</span>
+                        
+                        
+                        <span class="original-price">$ 19.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/incognet-samples-afro-house-essentials-vol-2/" target="_blank" rel="noopener">Afro House Essentials Vol.2</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 13.30</span>
+                        
+                        
+                        <span class="original-price">$ 19.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/incognet-samples-latin-tech-grooves-samples/" target="_blank" rel="noopener">Latin Tech Grooves</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 12.46</span>
+                        
+                        
+                        <span class="original-price">$ 17.80</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/incognet-samples-afro-house-serum-presets/" target="_blank" rel="noopener">Afro House Serum Presets</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 13.30</span>
+                        
+                        
+                        <span class="original-price">$ 19.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">30% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/incognet-subsonic-bass-house-bass-house-kits/" target="_blank" rel="noopener">Subsonic Bass House</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 8.96</span>
+                        
+                        
+                        <span class="original-price">$ 12.80</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">20% OFF</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/wav-samples/insignia-303-adsr-drum-machine-kits/" target="_blank" rel="noopener">Insignia 303 - ADSR Drum Machine Kits</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 12.00</span>
+                        
+                        
+                        <span class="original-price">$ 15.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/orbit-euclidean-sequencer/" target="_blank" rel="noopener">Orbit - Euclidean MIDI Sequencer</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 29.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/adsr-drum-machine/" target="_blank" rel="noopener">ADSR Drum Machine</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 79.00</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/midigrid/" target="_blank" rel="noopener">MIDIGRiD</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 29.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/hexcel-2/" target="_blank" rel="noopener">Hexcel</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 29.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/orbit-melodic-techno-edition/" target="_blank" rel="noopener">Orbit - Melodic Techno Edition</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 73.98</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">Save $ 230.00</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/adsr-drum-machine-10-expansions-bundle/" target="_blank" rel="noopener">ADSR Drum Machine + 10 Expansions Bundle!</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 329.00 $ 99.00</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">Save $ 167.00</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/fresh-start-adsr-midigrid-8-expansions/" target="_blank" rel="noopener">ADSR MIDIGRiD + 8 Preset Packs Bundle</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 221.99 $ 54.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/software/adsr-sample-manager/" target="_blank" rel="noopener">ADSR Sample Manager</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 9.99</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">Save $ 125.00</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/datacode-techno-samples-mega-bundle-8-packs-for-25/" target="_blank" rel="noopener">Datacode – Techno Samples Mega Bundle (8 Packs for $25)</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 25.00</span>
+                        
+                        
+                        <span class="original-price">$ 150.00</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">Save $ 94.00</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/sorrow-bringer-emotional-guitar-bundle-9-packs-for-25/" target="_blank" rel="noopener">Sorrow Bringer – Emotional Guitar Bundle: 9 Packs for $25</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 25.00</span>
+                        
+                        
+                        <span class="original-price">$ 118.91</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">Save $ 114.00</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/evoke-your-creativity-8-d-fused-sound-packs-for-only-25/" target="_blank" rel="noopener">D-Fused Sounds - Evoke Your Creativity – 8 Packs for Only $25</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 25.00</span>
+                        
+                        
+                        <span class="original-price">$ 139.26</span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="deal-card">
+                    
+                    <span class="discount-badge">Save $ 256.00</span>
+                    
+                    <div class="product-name">
+                        
+                        <a href="https://www.adsrsounds.com/product/presets/flame-audio-newcomer-2026-bundle-10-packs-for-25/" target="_blank" rel="noopener">Newcomer 2026 Bundle - 10 Packs for $25</a>
+                        
+                    </div>
+                    <div class="prices">
+                        
+                        <span class="sale-price">$ 25.00</span>
+                        
+                        
+                        <span class="original-price">$ 280.90</span>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <p>VST Plugin Sale Scraper - Auto-generated report</p>
+        </footer>
+    </div>
+</body>
+</html>
