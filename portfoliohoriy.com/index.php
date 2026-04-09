@@ -168,31 +168,10 @@
             <h2 class="title">AI SKILL</h2>
             <div class="skill-list">
               <div class="skill-item">
-                <p class="skill-img"><img src="/img/Claude_AI_symbol.svg" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">Claude Code</h3>
-                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。</p>
-                </div>
-              </div>
-              <div class="skill-item">
                 <p class="skill-img"><img src="/img/dify.jpg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Dify</h3>
                   <p class="skill-text">dockerを使用しAWSのCloudServerにデプロイ。AIワークフローの構築。アプリケーション制作。</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <p class="skill-img"><img src="/img/antigravity-icon__full-color.png" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">Google Antigravity</h3>
-                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <p class="skill-img"><img src="/img/google-notebooklm-logo-icon.svg" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">Google NotebookLM</h3>
-                  <p class="skill-text">プレゼン資料作成、情報整理、商談データサマリー。</p>
                 </div>
               </div>
               <div class="skill-item">
@@ -217,6 +196,22 @@
                 </div>
               </div>
 
+              <div class="skill-item">
+                <p class="skill-img"><img src="/img/leo.png" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Leonardo AI</h3>
+                  <p class="skill-text">プロンプトを用いた画像生成。プロンプトエンジニアリング。</p>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <p class="skill-img"><img src="/img/ff.png" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name"> Firefly</h3>
+                  <p class="skill-text">プロンプトを用いた画像生成。プロンプトエンジニアリング。</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -228,9 +223,8 @@
                 <p class="skill-img"><img src="/img/aws.png" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">AWS</h3>
-                  <p class="skill-text">CloudFormationを使用したMeta社conversionAPI連携<br>
-                    EC2を使用したWEBサーバー環境の構築（Apache、php、MySQL、ROUTE53、ELB）<br>
-                    RDSを使用したWordPressサイトの構築<br>
+                  <p class="skill-text">CloudFormationを使用したconversionAPI連携<br>
+                    WEBサーバー環境の構築（Apache、php、MySQL、ROUTE53、ELB）<br>
                   </p>
                 </div>
               </div>
@@ -253,6 +247,13 @@
                 <div class="skill-body">
                   <h3 class="skill-name">JavaScript</h3>
                   <p class="skill-text">カルーセルやモダール等を含む、部分的な機能の実装。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p class="skill-img"><img src="/img/25231.png" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Github</h3>
+                  <p class="skill-text">バージョン管理、運用ルール作成、リポジトリ管理。</p>
                 </div>
               </div>
             </div>
