@@ -168,10 +168,31 @@
             <h2 class="title">AI SKILL</h2>
             <div class="skill-list">
               <div class="skill-item">
+                <p class="skill-img"><img src="/img/Claude_AI_symbol.svg" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Claude Code</h3>
+                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。</p>
+                </div>
+              </div>
+              <div class="skill-item">
                 <p class="skill-img"><img src="/img/dify.jpg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Dify</h3>
                   <p class="skill-text">dockerを使用しAWSのCloudServerにデプロイ。AIワークフローの構築。アプリケーション制作。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p class="skill-img"><img src="/img/antigravity-icon__full-color.png" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Google Antigravity</h3>
+                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p class="skill-img"><img src="/img/google-notebooklm-logo-icon.svg" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Google NotebookLM</h3>
+                  <p class="skill-text">プレゼン資料作成、情報整理、商談データサマリー。</p>
                 </div>
               </div>
               <div class="skill-item">
@@ -193,22 +214,6 @@
                 <div class="skill-body">
                   <h3 class="skill-name">Midjourney</h3>
                   <p class="skill-text">プロンプトを用いた画像生成。imgtotext、各種パラメーターの理解。プロンプトエンジニアリング。</p>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <p class="skill-img"><img src="/img/leo.png" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">Leonardo AI</h3>
-                  <p class="skill-text">プロンプトを用いた画像生成。プロンプトエンジニアリング。</p>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <p class="skill-img"><img src="/img/ff.png" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name"> Firefly</h3>
-                  <p class="skill-text">プロンプトを用いた画像生成。プロンプトエンジニアリング。</p>
                 </div>
               </div>
 
