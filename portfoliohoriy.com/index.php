@@ -168,6 +168,13 @@
             <h2 class="title">AI SKILL</h2>
             <div class="skill-list">
               <div class="skill-item">
+                <p class="skill-img"><img src="/img/Claude_AI_symbol.svg" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Claude Code</h3>
+                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。skills導入。</p>
+                </div>
+              </div>
+              <div class="skill-item">
                 <p class="skill-img"><img src="/img/dify.jpg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Dify</h3>
@@ -175,9 +182,23 @@
                 </div>
               </div>
               <div class="skill-item">
+                <p class="skill-img"><img src="/img/antigravity-icon__full-color.png" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Google Antigravity</h3>
+                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。skills導入。</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p class="skill-img"><img src="/img/google-notebooklm-logo-icon.svg" alt=""></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Google NotebookLM</h3>
+                  <p class="skill-text">プレゼン資料作成、情報整理、商談データサマリー。</p>
+                </div>
+              </div>
+              <div class="skill-item">
                 <p class="skill-img"><img src="/img/gpt.png" alt=""></p>
                 <div class="skill-body">
-                  <h3 class="skill-name">ChatGPT4</h3>
+                  <h3 class="skill-name">ChatGPT</h3>
                   <p class="skill-text">APIを使用したspreadsheetとの連携/自動化、babyAGI環境の構築。プラグインの導入。プロンプトのテンプレート化、Code Interpreterの利用等。</p>
                 </div>
               </div>
@@ -195,23 +216,6 @@
                   <p class="skill-text">プロンプトを用いた画像生成。imgtotext、各種パラメーターの理解。プロンプトエンジニアリング。</p>
                 </div>
               </div>
-
-              <div class="skill-item">
-                <p class="skill-img"><img src="/img/leo.png" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">Leonardo AI</h3>
-                  <p class="skill-text">プロンプトを用いた画像生成。プロンプトエンジニアリング。</p>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <p class="skill-img"><img src="/img/ff.png" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name"> Firefly</h3>
-                  <p class="skill-text">プロンプトを用いた画像生成。プロンプトエンジニアリング。</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
