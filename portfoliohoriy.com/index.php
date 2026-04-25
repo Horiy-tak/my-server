@@ -28,9 +28,15 @@
   <main class="content">
     <!-- mv -->
     <div class="mv">
+      <span class="mv-edge-label" aria-hidden="true">PORTFOLIO · 2026 · TOKYO</span>
+      <span class="mv-bignum" aria-hidden="true">N°<i>01</i></span>
       <div class="mv-container">
-        <p class="mv-title">TAKAHIRO HORIGOME</p>
-        <p class="mv-subtitle">PORTFOLIO</p>
+        <div class="mv-meta">
+          <span class="mv-meta-label">— Web Director / Tokyo</span>
+          <span class="mv-meta-year">MMXXV</span>
+        </div>
+        <p class="mv-title">TAKAHIRO<br><em>HORIGOME</em>.</p>
+        <p class="mv-subtitle">PORTFOLIO ARCHIVE</p>
         <p class="mv-text">過去の対応実績・保有スキルの一部を掲載したポートフォリオサイトです。<br>
           WEB制作・サーバー周りの対応から、話題の生成AIなどの最新技術まで幅広い知見とスキルがあります。<br>
           <br>
@@ -38,14 +44,6 @@
           <br>
         </p>
         <button id="modalOpen" class="link_btn">ネットワーク構成　→</button>
-        <div id="easyModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img src="/img/network.jpg" alt="AWS">
-              <span class="modalClose">×</span>
-            </div>
-          </div>
-        </div>
         <div class="video-background">
           <video class="bg_video" autoplay="" loop="" muted="">
             <source src="background/bg.mp4" type="video/mp4">
@@ -54,11 +52,22 @@
 
         </div>
       </div>
+      <a href="#works" class="mv-scroll" aria-label="scroll">
+        <span>SCROLL</span>
+        <span class="mv-scroll-line"></span>
+      </a>
     </div>
     <!-- /mv -->
+
+    <!-- marquee divider -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>WEB DIRECTION</span><span>★</span><span>LANDING PAGE</span><span>★</span><span>UI / UX</span><span>★</span><span>GENERATIVE AI</span><span>★</span><span>AWS / SERVER</span><span>★</span><span>WEB DIRECTION</span><span>★</span><span>LANDING PAGE</span><span>★</span><span>UI / UX</span><span>★</span><span>GENERATIVE AI</span><span>★</span><span>AWS / SERVER</span><span>★</span>
+      </div>
+    </div>
+    <!--
     <section class="anchor">
       <div class="container">
-        <!--<h2 class="title">WORKS</h2> -->
         <div class="top-menu">
           <a class="works-item" href="#works">
             <p class="menu-name"><span>WORKS ↓</p>
@@ -69,12 +78,10 @@
           <a class="works-item" href="#about">
             <p class="menu-name">ABOUT ↓</p>
           </a>
-          <!--<a class="works-item" href="website/">
-              <p class="menu-name">コーポレートサイト・サービスサイト制作実績<br class="sp-only">｜more info →</p>
-            </a> -->
         </div>
       </div>
     </section>
+    -->
 
     <!-- works -->
     <section class="works section" id="works">
@@ -82,25 +89,97 @@
         <h2 class="title">WORKS</h2>
         <div class="works-list">
           <a class="works-item" id="lp_link" href="lp/">
-            <div class="works-img"><img src="/img/lp.jpg" alt="" /></div>
-            <p class="works-name"><!--<span>LP制作実績</span> --><br class="sp-only">more info →</p>
+            <div class="works-card">
+              <span class="w-num">01 / LP</span>
+              <div class="w-icon" aria-hidden="true">
+                <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="3.5" width="18" height="29" rx="2"/>
+                  <path d="M13 11h10"/>
+                  <path d="M13 16h7"/>
+                  <path d="M13 21h9"/>
+                  <rect x="13" y="25" width="10" height="4" rx="1" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+              <div class="w-meta">
+                <h3 class="w-title">Landing Page</h3>
+                <p class="w-sub">広告・申込・セミナーLPなど</p>
+              </div>
+            </div>
+            <p class="works-name">View detail</p>
           </a>
           <a class="works-item" id="banner_link" href="banner/">
-            <div class="works-img"><img src="/img/banner.jpg" alt="" /></div>
-            <p class="works-name"><br class="sp-only">more info →</p>
+            <div class="works-card">
+              <span class="w-num">02 / Banner</span>
+              <div class="w-icon" aria-hidden="true">
+                <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="10" width="30" height="16" rx="2"/>
+                  <path d="M8 17h10"/>
+                  <path d="M8 21h6"/>
+                  <circle cx="26" cy="18" r="3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+              <div class="w-meta">
+                <h3 class="w-title">Banner</h3>
+                <p class="w-sub">Web 広告クリエイティブ</p>
+              </div>
+            </div>
+            <p class="works-name">View detail</p>
           </a>
           <a class="works-item" href="web/">
-            <div class="works-img"><img src="/img/site.jpg" alt="" /></div>
-            <p class="works-name"><br class="sp-only">more info →</p>
+            <div class="works-card">
+              <span class="w-num">03 / Web</span>
+              <div class="w-icon" aria-hidden="true">
+                <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="6" width="28" height="24" rx="2"/>
+                  <path d="M4 12h28"/>
+                  <circle cx="8" cy="9" r="0.9" fill="currentColor" stroke="none"/>
+                  <circle cx="11" cy="9" r="0.9" fill="currentColor" stroke="none"/>
+                  <circle cx="14" cy="9" r="0.9" fill="currentColor" stroke="none"/>
+                  <path d="M9 18h18"/>
+                  <path d="M9 22h12"/>
+                </svg>
+              </div>
+              <div class="w-meta">
+                <h3 class="w-title">Web Site</h3>
+                <p class="w-sub">コーポレート / サービスサイト</p>
+              </div>
+            </div>
+            <p class="works-name">View detail</p>
           </a>
+          <!--
           <a class="works-item" href="ai/">
-            <div class="works-img"><img src="/img/ai-02.png" alt="" /></div>
-            <p class="works-name"><br class="sp-only">more info →</p>
+            <div class="works-card">
+              <span class="w-num">04 / AI</span>
+              <div class="w-icon" aria-hidden="true">
+                <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 4 L18 14 L28 16 L18 18 L16 28 L14 18 L4 16 L14 14 Z" fill="currentColor" stroke="none"/>
+                  <path d="M27 22 L28 26 L32 27 L28 28 L27 32 L26 28 L22 27 L26 26 Z" fill="currentColor" stroke="none" opacity="0.55"/>
+                </svg>
+              </div>
+              <div class="w-meta">
+                <h3 class="w-title">Generative AI</h3>
+                <p class="w-sub">画像生成・プロンプト設計</p>
+              </div>
+            </div>
+            <p class="works-name">View detail</p>
           </a>
           <a class="works-item" href="movie/">
-            <div class="works-img"><img src="/img/movie.jpg" alt="" /></div>
-            <p class="works-name"><br class="sp-only">more info →</p>
+            <div class="works-card">
+              <span class="w-num">05 / Movie</span>
+              <div class="w-icon" aria-hidden="true">
+                <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="13"/>
+                  <path d="M15.5 12.5 L24 18 L15.5 23.5 Z" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+              <div class="w-meta">
+                <h3 class="w-title">Movie</h3>
+                <p class="w-sub">映像編集・モーション制作</p>
+              </div>
+            </div>
+            <p class="works-name">View detail</p>
           </a>
+          -->
         </div>
       </div>
     </section>
@@ -129,16 +208,7 @@
                   ノウハウを公開しました。
                 </p>
               </div>
-              <a href="/reaction.pdf" target="_blank">
-                <button id="modalOpen" class="link_btn_tube">反響を見る　→</button></a>
-              <div id="easyModal" class="modal">
-                <div class="modal-content">
-                  <!--<div class="modal-header">
-                      <img src="/img/netwog" alt="AWS">
-                      <span class="modalClose">×</span>
-                    </div> -->
-                </div>
-              </div>
+              <a href="/reaction.pdf" target="_blank" class="link_btn_tube">反響を見る　→</a>
             </div>
           </div>
         </div>
@@ -171,7 +241,7 @@
                 <p class="skill-img"><img src="/img/Claude_AI_symbol.svg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Claude Code</h3>
-                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。skills導入。</p>
+                  <p class="skill-text">アプリケーション制作、WEBサイト作成、業務自動化ツール作成。skills、MCPを用いたデザインシステム構築。</p>
                 </div>
               </div>
               <div class="skill-item">
@@ -351,13 +421,13 @@
 
         <div class="skill">
           <div class="container">
-            <h2 class="title">CRM SKILL</h2>
+            <h2 class="title">MA SKILL</h2>
             <div class="skill-list">
               <div class="skill-item">
                 <p class="skill-img"><img src="/img/ss.png" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Salesforce</h3>
-                  <p class="skill-text">アカウントエンゲージメントのフォーム機能を使用したランディングページへのフォーム実装。フォームハンドラーでの情報取得等。</p>
+                  <p class="skill-text">アカウントエンゲージメントのフォーム機能を使用したランディングページへのフォーム実装。フォームハンドラーでの情報取得、MA移管の初期構築。</p>
                 </div>
               </div>
               <div class="skill-item">
@@ -371,7 +441,7 @@
                 <p class="skill-img"><img src="/img/marketo.png" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Marketo</h3>
-                  <p class="skill-text">ページ作成機能を使用したランディングページの作成。フォーム埋め込み等。</p>
+                  <p class="skill-text">ページ作成機能を使用したランディングページの作成。プロジェクト作成、Salesforce連携、APIを使用したフォームのカスタマイズ等</p>
                 </div>
               </div>
             </div>
@@ -420,12 +490,12 @@
             <h2>堀米 貴裕｜WEB director</h2>
             <div class="about_txt">
               <p>
-                WEB制作会社、インターネット広告代理店を経て人材斡旋事業会社にて現職です。</br>
-                <b>広告出稿に伴うLPやバナーの制作に加え、自社WEBサイト周りドメインやサーバーなどの管理も一括して対応</b>しています。<br>
-                通常のWEB制作の制作進行はもちろん、CRM連携やサーバー移管、DNS周辺業務など、自社のサービスの根幹に関わる業務も行っています。<br>
+                WEB制作会社、インターネット広告代理店を経て株式会社kubellにて現職です。</br>
+                <b>広告出稿に伴うLPやバナーの制作に加え、WEBサイト周りドメインやサーバーなどの運用・保守面も一括して対応</b>しています。<br>
+                企画から要件定義に始まるWEB制作の制作進行はもちろん、MAツール連携やサーバー、DNS周辺業務など、サービスの根幹に関わる業務も行っています。<br>
               </p>
               <p>
-                所属事業部のタスク以外にも、事業部から業務も並行して行い、リーダーとして<br><b>教育/マネジメント、外注管理、業務フローの作成、組織体制の構築、Youtubeチャンネルの運営/出演</b>など、マネジメント業務も幅広く行っています。
+                クリエイティブ責任者として複数事業部を兼務しつつ、リーダーとして<br><b>教育/マネジメント、外注管理、業務フローの作成、組織体制の構築、Youtubeチャンネルの運営/出演</b>など、マネジメント業務も幅広く行っています。
               </p>
               <p>
                 また、<b>最新のAI技術もいち早く導入</b>し、クリエイティブ制作への活用、業務の効率化なども推進しています。
@@ -445,6 +515,17 @@
   <!-- /footer -->
 
   </div>
+
+  <!-- Modal: kept outside .mv stacking context so it overlays the header -->
+  <div id="easyModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/img/network.jpg" alt="AWS">
+        <span class="modalClose">×</span>
+      </div>
+    </div>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
 
