@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:at-q.com)",
+      "Bash(brew install *)",
+      "Bash(php -v)",
+      "Bash(php -S localhost:8000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/lp/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/web/)",
+      "WebFetch(domain:marui-unite.co.jp)",
+      "Bash(curl -s -L -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120 Safari/537.36\" https://marui-unite.co.jp/)",
+      "Bash(curl -s -L -A \"Mozilla/5.0\" \"https://storage.googleapis.com/studio-publish/projects/M3aA4ANyqe/6aomovKnOR/\")",
+      "Bash(curl -s -L -A \"Mozilla/5.0\" \"https://marui-unite.co.jp/_nuxt/entry.C0E92ihM.css\")",
+      "Bash(curl -s -o /dev/null -w \"homepage: %{http_code}\\\\n\" http://localhost:8000/)",
+      "Bash(curl -s -o /dev/null -w \"lp: %{http_code}\\\\n\" http://localhost:8000/lp/)",
+      "Bash(curl -s -o /dev/null -w \"lp detail: %{http_code}\\\\n\" http://localhost:8000/lp/takamatsu.php)",
+      "Bash(curl -s -o /dev/null -w \"banner: %{http_code}\\\\n\" http://localhost:8000/banner/)",
+      "Bash(curl -s http://localhost:8000/css/style.css)",
+      "Bash(curl -s http://localhost:8000/)"
+    ]
+  }
+}
