@@ -33,7 +33,7 @@
       <div class="mv-container">
         <div class="mv-meta">
           <span class="mv-meta-label">— Web Director / Tokyo</span>
-          <span class="mv-meta-year">MMXXV</span>
+          <span class="mv-meta-year">MMXXVI</span>
         </div>
         <p class="mv-title">TAKAHIRO<br><em>HORIGOME</em>.</p>
         <p class="mv-subtitle">PORTFOLIO ARCHIVE</p>
