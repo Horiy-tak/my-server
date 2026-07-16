@@ -186,6 +186,12 @@
     { name: "ザ・グランテラス", url: "https://theglamterrace.com/", region: "川越", price: null, rating: "良", image: "https://theglamterrace.com/wp-content/uploads/sub_image.jpg" },
     { name: "AMAO VILLA 城ヶ崎", url: "https://luxevillas-izu.com/stay/amao-villa/", region: "伊豆高原", price: null, rating: null, image: "https://luxevillas-izu.com/wp-content/uploads/2024/11/8bc4934ca2e4482365a1e0656df53358.png" },
     { name: "小谷流の里 ドギーズアイランド", url: "https://doggys-island.jp/", region: "小谷流", price: 20748, rating: null, image: "https://doggys-island.jp/assets/images/ogp-20181225.png", pin: 3 },
+    { name: "Rakuten STAY VILLA草津温泉", url: "https://stay.rakuten.co.jp/villa/kusatsu-onsen/", region: "草津", price: null, rating: null, image: "https://stay.rakuten.co.jp/images/pages/villa-kusatsu-onsen/ogp-rakuten-stay-villa-kusatsu-onsen.png" },
+    { name: "グランドーム千葉富津", url: "https://www.chibafuttsu-glamping.com/", region: "富津", price: null, rating: null, image: "https://www.chibafuttsu-glamping.com/wp-content/uploads/2024/12/twitter_mv.jpg" },
+    { name: "ヴィラ楓倉", url: "https://www.villa-kagura.com", region: "那須塩原", price: null, rating: null, image: "https://www.villa-kagura.com/ogp.jpg" },
+    { name: "Luxe Villas 伊豆", url: "https://luxevillas-izu.com/", region: "伊豆", price: null, rating: null, image: "https://luxevillas-izu.com/wp-content/uploads/2025/08/001-520x370.jpg" },
+    { name: "離れ 風月-FUGETSU", url: "https://www.dog-auberge-fugetsu.com", region: "勝浦", price: null, rating: null, image: "https://www.dog-auberge-fugetsu.com/wp-content/uploads/2024/07/kinsai05.jpg" },
+    { name: "AICAFEFARM -アイカフェファーム-", url: "https://aicafefarmvillage.com", region: "北杜", price: null, rating: null, image: "https://aicafefarmvillage.com/wp-content/uploads/2024/07/001-3.jpg" },
   ];
 
   const regionThemes = {
@@ -213,6 +219,11 @@
     "長柄": ["#95a887", "#4d5c42"],
     "富津": ["#7a9db0", "#3d5566"],
     "川越": ["#b09068", "#5f4a2c"],
+    "草津": ["#a89960", "#5c5028"],
+    "那須塩原": ["#c99a5e", "#7a5a2f"],
+    "伊豆": ["#c98a5e", "#7a4a2a"],
+    "勝浦": ["#5b8fa8", "#2d5063"],
+    "北杜": ["#7ba0b8", "#3d5568"],
   };
 
   const grid = document.getElementById("cardGrid");
@@ -241,15 +252,15 @@
   const regionToPref = {
     "房総": "千葉県", "南房総": "千葉県", "九十九里": "千葉県", "いすみ": "千葉県",
     "佐原": "千葉県", "香取": "千葉県", "長柄": "千葉県", "富津": "千葉県",
-    "小谷流": "千葉県", "鋸南町": "千葉県",
+    "小谷流": "千葉県", "鋸南町": "千葉県", "勝浦": "千葉県",
     "秩父": "埼玉県", "川越": "埼玉県",
     "箱根": "神奈川県", "神奈川": "神奈川県",
     "茨城": "茨城県",
-    "那須": "栃木県",
-    "赤城山": "群馬県",
-    "河口湖": "山梨県", "忍野": "山梨県", "富士吉田": "山梨県",
+    "那須": "栃木県", "那須塩原": "栃木県",
+    "赤城山": "群馬県", "草津": "群馬県",
+    "河口湖": "山梨県", "忍野": "山梨県", "富士吉田": "山梨県", "北杜": "山梨県",
     "軽井沢": "長野県", "佐久": "長野県",
-    "伊豆高原": "静岡県", "西伊豆": "静岡県",
+    "伊豆高原": "静岡県", "西伊豆": "静岡県", "伊豆": "静岡県",
   };
   // Prefecture display order (都道府県コード順)
   const prefOrder = ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "神奈川県", "山梨県", "長野県", "静岡県"];
