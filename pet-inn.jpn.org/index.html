@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="/img/common/favicon.webp">
 </head>
 <body>
 
@@ -192,6 +193,14 @@
     { name: "Luxe Villas 伊豆", url: "https://luxevillas-izu.com/", region: "伊豆", price: null, rating: null, image: "https://luxevillas-izu.com/wp-content/uploads/2025/08/001-520x370.jpg" },
     { name: "離れ 風月-FUGETSU", url: "https://www.dog-auberge-fugetsu.com", region: "勝浦", price: null, rating: null, image: "https://www.dog-auberge-fugetsu.com/wp-content/uploads/2024/07/kinsai05.jpg" },
     { name: "AICAFEFARM -アイカフェファーム-", url: "https://aicafefarmvillage.com", region: "北杜", price: null, rating: null, image: "https://aicafefarmvillage.com/wp-content/uploads/2024/07/001-3.jpg" },
+    { name: "AWAUMI富士河口湖リゾート", url: "https://www.awaumi.site/", region: "河口湖", price: null, rating: null, note: "専用ドッグラン付きドッグヴィラあり", image: "https://www.awaumi.site/wp/wp-content/themes/awaumi/assets/img/index/kv01.jpg" },
+    { name: "箱根わんこ亭 ゆにわ", url: "https://wankotei.net/06/", region: "箱根", price: null, rating: null, note: "小型犬専門・セルフチェックイン制", image: "https://wankotei.net/06/bdflashinfo/thumbnail.png" },
+    { name: "蓼科東急ホテル", url: "https://www.tateshinatokyuhotel.com/", region: "蓼科", price: null, rating: null, note: "ペット可のコテージルームあり", image: "https://tateshina-tokyu.sakura.ne.jp/tateshinatokyuhotel/wp2/wp-content/uploads/2025/09/ogp-1.jpg" },
+    { name: "Private Villa HACHI 八ヶ岳", url: "https://www.hachi-yatsugatake.jp", region: "北杜", price: null, rating: null, note: "犬同伴可は「RIVAGE」棟のみ", image: "https://www.hachi-yatsugatake.jp/common/img/ogp.jpg" },
+    { name: "Premium Dog Villa ノッカ", url: "https://www.ang-ns.com/stay/nokka/", region: "那須", price: null, rating: null, note: "エンゼルフォレスト那須内・3頭まで1泊3,000円", image: "https://www.ang-ns.com/stay/nokka/images/pc-001.jpg" },
+    { name: "若喜旅館", url: "https://www.wakakiryokan-nasu.com", region: "那須", price: null, rating: null, note: "2026年7月リブランド・小中型犬2頭まで", image: "https://www.wakakiryokan-nasu.com/wp-content/uploads/2026/06/spa4.jpg" },
+    { name: "Ruff-Laugh Chiba", url: "https://www.cigr.co.jp/ruff-laugh/", region: "茂原", price: null, rating: null, note: "ドッグパーク併設・2026年7月グランドオープン", image: "https://lp.cigr.co.jp/ruff-laugh/OGP.jpg?20260529" },
+    { name: "御宿 五氣里", url: "https://itsukiri-onjuku.com/", region: "御宿", price: null, rating: null, note: "海まで徒歩0分・「五氣里」姉妹宿", image: "https://storage.googleapis.com/production-os-assets/assets/302f3005-5334-40d4-915c-4c246dbde5d4" },
   ];
 
   const regionThemes = {
@@ -224,6 +233,9 @@
     "伊豆": ["#c98a5e", "#7a4a2a"],
     "勝浦": ["#5b8fa8", "#2d5063"],
     "北杜": ["#7ba0b8", "#3d5568"],
+    "蓼科": ["#6f8a63", "#37452e"],
+    "茂原": ["#7fa88f", "#3f5c4d"],
+    "御宿": ["#4f8aa3", "#284857"],
   };
 
   const grid = document.getElementById("cardGrid");
@@ -259,8 +271,9 @@
     "那須": "栃木県", "那須塩原": "栃木県",
     "赤城山": "群馬県", "草津": "群馬県",
     "河口湖": "山梨県", "忍野": "山梨県", "富士吉田": "山梨県", "北杜": "山梨県",
-    "軽井沢": "長野県", "佐久": "長野県",
+    "軽井沢": "長野県", "佐久": "長野県", "蓼科": "長野県",
     "伊豆高原": "静岡県", "西伊豆": "静岡県", "伊豆": "静岡県",
+    "茂原": "千葉県", "御宿": "千葉県",
   };
   // Prefecture display order (都道府県コード順)
   const prefOrder = ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "神奈川県", "山梨県", "長野県", "静岡県"];
