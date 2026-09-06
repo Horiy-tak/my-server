@@ -559,6 +559,38 @@
     color: var(--ink);
   }
   .footer-note { font-size: 12px; color: var(--ink-mute); line-height: 1.9; max-width: 560px; }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+  }
+  .footer-link {
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: color-mix(in srgb, var(--ink-soft) 38%, transparent);
+    transition: color 160ms ease, text-decoration-color 160ms ease;
+  }
+  .footer-link:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+  .footer-link + .footer-link::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    width: 3px;
+    height: 3px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--ink-mute) 60%, transparent);
+  }
   .footer-copy { font-size: 11px; color: var(--ink-mute); letter-spacing: 0.18em; margin-top: 8px; }
 
   /* ===== Paw pattern decoration ===== */
